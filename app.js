@@ -30,11 +30,12 @@ Complete the exercise in the space below:
 
 function isAdult(age) {
   if (isAdult >= 18) {
-    return "Adult";
-  } else {
     return "Minor";
+  } else {
+    return "Adult";
   }
 }
+
 
 isAdult(21);
 console.log("Exercise 2 Result:", isAdult(21));
@@ -76,7 +77,9 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
-function generateEmail() {}
+function generateEmail(name, domain) {
+return name + '@' + domain
+}
 
 console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
 /*
@@ -92,7 +95,7 @@ Complete the exercise in the space below:
 */
 
 function greetUser(name, timeOfday) {
-  return `Good ${timeOfday}`, name;
+  return `Good${timeOfday},` + ' ' + name + '!';
 }
 
 console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
@@ -110,6 +113,7 @@ function maxOfThree(x, y, z) {
   if (x > y && x > z) {
     return x;
   } else if (y > x && y > z) {
+    return y;
   } else {
     return z;
   }
@@ -146,7 +150,15 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
-function convertTemperature() {}
+function convertTemperature(C) {
+  return C * (9 / 5) + 32;
+}
+
+function converTemperature(F) {
+return F = (F - 32) * (5 / 9);
+}
+
+// Notes for self: Why does it say 5 for F?
 
 console.log("Exercise 8 Result:", convertTemperature(32, "C"));
 /*
@@ -164,6 +176,16 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
-function basicCalculator(num) {}
+function basicCalculator(firstNumber, secondNumber, operator) {
+  if (operator === 'add') {
+    return(firstNumber + secondNumber);
+  } else if (operator === 'subtract') {
+    return(firstNumber - secondNumber);
+  } else if (operator === 'multiply') {
+    return(firstNumber * secondNumber);
+  } else if (operator === 'divide') {
+    return(firstNumber / secondNumber);
+  }
+}
 
 console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
