@@ -14,9 +14,9 @@ const maxOfTwoNumbers = (x, y) => {
   } else {
     return y;
   }
-}
+};
 
-console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+console.log("Exercise 1 Result:", maxOfTwoNumbers(3, 9));
 /*
 Exercise 2: isAdult()
 
@@ -28,15 +28,16 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-function isAdult(age)
-if (isAdult >= 18) {
-  return('Adult')
-} else {
-  return('Minor')
+function isAdult(age) {
+  if (isAdult >= 18) {
+    return "Adult";
+  } else {
+    return "Minor";
+  }
 }
 
-isAdult(21)
-console.log('Exercise 2 Result:', isAdult(21));
+isAdult(21);
+console.log("Exercise 2 Result:", isAdult(21));
 /*
 Exercise 3: isCharAVowel()
 
@@ -49,13 +50,21 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-function isCharAVowel() {
-    statements;
-    return statement;
+function isCharAVowel(char) {
+  if (
+    char === "a" ||
+    char === "e" ||
+    char === "i" ||
+    char === "o" ||
+    char === "u"
+  ) {
+    return "True";
+  } else {
+    return "False";
+  }
 }
 
-
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log("Exercise 3 Result:", isCharAVowel("a"));
 /*
 Exercise 4: generateEmail()
 
@@ -67,10 +76,9 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
+function generateEmail() {}
 
-
-
-console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
 /*
 Exercise 5: greetUser()
 
@@ -83,9 +91,11 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
+function greetUser(name, timeOfday) {
+  return `Good ${timeOfday}`, name;
+}
 
-
-console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
 /*
 Exercise 6: maxOfThree()
 
@@ -96,10 +106,16 @@ Example: maxOfThree(17, 4, 9) should return 17.
 
 Complete the exercise in the space below:
 */
+function maxOfThree(x, y, z) {
+  if (x > y && x > z) {
+    return x;
+  } else if (y > x && y > z) {
+  } else {
+    return z;
+  }
+}
 
-
-
-console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
 /*
 Exercise 7: calculateTip()
 
@@ -111,10 +127,12 @@ Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
+function calculateTip(billAmount, tipPercentage) {
+  const tipAmount = billAmount * tipPercentage;
+  return tipAmount;
+}
 
-
-
-console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log("Exercise 7 Result:", calculateTip(50, 20));
 /*
 Exercise 8: convertTemperature()
 
@@ -128,10 +146,9 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
+function convertTemperature() {}
 
-
-
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log("Exercise 8 Result:", convertTemperature(32, "C"));
 /*
 Exercise 9: basicCalculator()
 
@@ -147,16 +164,6 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
-function doMath(firstNumber, secondNumber, operator) {
-    if (operator === 'add') {
-        console.log(firstNumber + secondNumber);
-    } else if (operator === 'subtract') {
-        console.log(firstNumber - secondNumber);
-    } else {
-        console.log('Something went wrong');
-    }
-}
+function basicCalculator(num) {}
 
-
-
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
