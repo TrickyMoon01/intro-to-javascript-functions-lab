@@ -29,15 +29,13 @@ Complete the exercise in the space below:
 */
 
 function isAdult(age) {
-  if (isAdult >= 18) {
-    return "Minor";
-  } else {
+  if (age >= 18) {
     return "Adult";
+  } else {
+    return "Minor";
   }
 }
 
-
-isAdult(21);
 console.log("Exercise 2 Result:", isAdult(21));
 /*
 Exercise 3: isCharAVowel()
