@@ -57,9 +57,9 @@ function isCharAVowel(char) {
     char === "o" ||
     char === "u"
   ) {
-    return "True";
+    return "true";
   } else {
-    return "False";
+    return "false";
   }
 }
 
@@ -93,7 +93,7 @@ Complete the exercise in the space below:
 */
 
 function greetUser(name, timeOfday) {
-  return `Good${timeOfday},` + ' ' + name + '!';
+  return `Good ${timeOfday}, ${name}!`;
 }
 
 console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
@@ -130,7 +130,7 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 function calculateTip(billAmount, tipPercentage) {
-  const tipAmount = billAmount * tipPercentage;
+  const tipAmount = billAmount * (tipPercentage / 100);
   return tipAmount;
 }
 
@@ -148,13 +148,7 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
-function convertTemperature(C) {
-  return C * (9 / 5) + 32;
-}
-
-function converTemperature(F) {
-return F = (F - 32) * (5 / 9);
-}
+function convertTemperature(temp, unit) { if (unit === 'C') { return (temp * 9/5) + 32; } else if (unit === 'F') { return (temp - 32) * (5/9); } }
 
 // Notes for self: Why does it say 5 for F?
 
